@@ -1,0 +1,9 @@
+<h1>Mis mangas favoritos</h1>
+<div class="mangas--grid">
+  <div *ngFor="let manga of mangas">
+  <h2>{{manga.name}}</h2>
+  <img [src]="manga.image" alt="image">
+  <p> Capitulos: {{manga.chapters}} </p>
+  <p> Autor: {{manga.autor}} </p>
+  </div>
+</div>
